@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+	<div style="padding: 10px;">
+		<img src="image/icon.png">
+		<img style="height: 100%;width: 100%;" src="image/anh2.png">
+	</div>
+	<div >
+		<button style="background-color:white;text-align: center;"> <a href="Home.html">Trang chủ</a> </button>
+		<button style="background-color:white;text-align: center;"> <a href="Index.html">Danh sách</a> </button>
+		<button style="background-color:white;text-align: center;"> Thông tin </button>
+	</div>
+	<div style="padding-left: 28%;padding-top: 20px;">
+		<img src="image/anh1.jpg">
+	</div>
     <h1>Danh Sách Sinh Viên</h1>
 	<table border="1">
 		<thead>
@@ -19,7 +31,7 @@
 			<tr th:each="sv : ${dsSV}">
 				<td th:text="${sv.maSoSV}" />
 				<td th:text="${sv.hoVaTen}" />
-                <td th:text="${sv.diemSo}" />
+				<td th:text="${sv.diemSo}"/>
 			</tr>
 		</tbody>
 	</table>

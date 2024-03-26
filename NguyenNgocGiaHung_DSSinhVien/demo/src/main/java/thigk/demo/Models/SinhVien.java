@@ -15,19 +15,23 @@ public class SinhVien {
 	}
 	public void setHoVaTen(String hoVaTen) {
 		this.hoVaTen = hoVaTen;
-	}	
-    public String getdiemSo() {
+	}
+	public String getDiemSo() {
 		return diemSo;
 	}
 	public void setDiemSo(String diemSo) {
 		this.diemSo = diemSo;
 	}
+
 	public SinhVien() {
 		super();
 	}
+	
 	public SinhVien(String maSoSV, String hoVaTen, String diemSo) {
 		this.maSoSV = maSoSV;
 		this.hoVaTen = hoVaTen;
-        this.diemSo = diemSo;
+		this.diemSo = diemSo;
 	}
+	
+	
 }
